@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Lato', sans-serif;
+ width: 100%;
+ height: 100vh;
+ background: url(https://source.unsplash.com/CuXieV3PjlI) center/cover no-repeat;
+ text-shadow: 2px 1px 1px black;
+}
+
+.login-container {
+ position: relative;
+ top: 20%;
+ margin: auto;
+ max-width: 700px;
+ height: 550px;
+ background-color: rgba(20, 20, 20, 0.8);
+ color: #ddd;
+ padding: 2rem;
+ border-radius: 25px;
+ box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+ width: 120px;
+ margin: 1.5rem 0;
+}
+
+.btn:hover {
+ transform: scale(0.98);
+}
+
+i.fa-solid.fa-eye {
+ cursor: pointer;
+}
+
+.form-field input {
+ color: #ddd;
+}
+
+/* Hide HTML Error Text*/
+.alert-message {
+ visibility: hidden;
+}
+
+/* Error JS Message */
+.form-field.error input {
+ border-color: red;
+}
+
+/* Success JS Message */
+.form-field.success input {
+ border-color: greenyellow;
+}

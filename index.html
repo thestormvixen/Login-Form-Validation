@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!-- Materialize for Buttons CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+ <!-- Font Awesome Kit -->
+ <script src="https://kit.fontawesome.com/7b4694308d.js" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="style.css">
+ <title>Simple Form Verification</title>
+</head>
+<body>
+
+ <!-- Login Form -->
+ <div class="login-container">
+  <h2>Login</h2>
+  <form action="https://www.google.com" id="loginForm">
+
+   <!-- Username Field -->
+   <div class="form-field">
+    <label for="loginUsername">User Name</label>
+   <input type="text" id="loginUsername" placeholder="Enter username">
+   <small class="alert-message">Error</small>
+   </div>
+
+   <!-- Password Field-->
+   <div class="form-field">
+    <label for="loginPassword">Password</label>
+   <input type="password" id="loginPassword" placeholder="Enter password">
+   <small class="alert-message">Error</small>
+
+   <!-- Show/Hide Password Icon-->
+   <div class="form-field">
+    <i class="fa-solid fa-eye"></i>
+    <label>Show/Hide password</label>
+   </div>
+   </div>
+
+   <!-- Username/Password Submit Button -->
+   <button class="btn" type="submit">Go</button>
+  </form>
+
+  <!-- Reset Username/Password & E-mail Request -->
+  <div class="reset-password"><a href="#">Forgot username/password?</a></div>
+   <form action="" class="form-request">
+    <div class="form-field">
+     <label for="requestEmail">E-mail:</label>
+     <input type="email" name="" id="requestEmail" placeholder="Enter your E-mail">
+     <small class="alert-message">Error</small>
+    </div>
+
+    <!-- E-mail Request Button -->
+    <button class="btn red" type="submit">Request</button>
+   </form>
+ </div>
+ 
+ <script src="main.js"></script>
+</body>
+</html>
